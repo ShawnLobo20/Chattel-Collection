@@ -1,2 +1,2 @@
 # Chattel-Collection
-A website for browsing through furniture and other accessories  
+A website for purchasing furniture and other houshold appliances.
