@@ -1,89 +1,38 @@
 <!doctype html>
 
-<html style="overflow-x:hidden">
+<html style="overflow-x:hidden" lang="en">
  <head>
 	<meta charset="utf-8">
 	
 	<title>Furniture-Appliance Sale </title>
  
+<link rel="stylesheet" href="css1.css">
+ 
  <style>
-		#t 
-		{
-			
-			background-color:#950909;
-			height:100px;
-			border-radius:10px;
-			margin-left:-1%;
-			margin-right: -1%;
-			margin-top:-1%;
-			box-shadow: 2px 3px #D6D1CB;
-		}
+	table,th,td.mid{
+		margin-left:auto;
+		margin-right:auto;
+		border:1px solid black;
+		padding:8px;
+	}
 	
-		#he 
-		{
-			color:white;
-			font-size:80px;
-			font-style:italic;
-			
-		}
-		
-		#bo
-		{	
-			background-color:gray;
-			border-radius:20px;
-			margin-left:300px;
-			margin-right:300px;
-		}
-		
-		.centered 
-		{
-			position: absolute;
-			top: 30%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-		
-		
-		ul 
-		{
-			list-style-type: none;
-			margin-top: 7px;
-			margin-left: -10px;
-			margin-right: -10px;
-			padding: 0;
-			overflow: hidden;
-			background-color: #333;
-		}		
-
-		li 
-		{
-			float: left;
-		}
-
-		li a 
-		{
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 80px;
-			text-decoration: none;
-		}
-
-		li a:hover:not(.active) 
-		{
-			background-color: #111;
-		}
-
-		.active 
-		{
-			background-color: #4CAF50;
-		}
-		
-		body { background-color:#FFF5DC; background-image: linear-gradient(to right, #FFFFFF , #F6F6F6);}
+	h1{
+		text-align:center;
+	}
 	
-	</style>
- 
- 
+	td a:link{
+		color:red;
+		text-decoration:wavy;
+	}
+	
+	td a:visited{
+		color:green;
+		text-decoration:wavy;
+	}
+	
+	
+	
+ </style>
  
  </head>
 
@@ -91,10 +40,10 @@
 <body>
 
 <div id="t">
- <header id="he" align="center"> Chattel Collection </header> 
+ <header id="he"> Chattel Collection </header> 
 </div>
 
-<ul>
+<ul class="fir1">
   <li><a href="index.html">Home</a></li>
   <li><a class="active" href="sale.html">Furnitures and Appliances on Sale</a></li>
   <li><a href ="furniture.html"> Furnitures and Appliances</a></li> 
@@ -105,19 +54,24 @@
 
 
 
-<h1 align="center"> <u>Furnitures and Appliances on Sale</u> </h1>
+<h1> <u>Furnitures and Appliances on Sale</u> </h1>
 
-<table align="center" border="1" cellpadding="8">
+<div class="row">
+
+<table class="mid">
 	<tr> <th>Sr. No.</th> <th>Product Name</th> <th>Price</th> <th>Image</th> </tr>
-	<tr> <td align="center">1</td> <td align="center">King Size Bed</td> <td>Rs.20,000</td> <td> <img src="bed2.jpg" alt="bed2">
-	<tr> <td align="center">2</td> <td align="center">Samsung 192 litres 3 Star Single Door Refrigerator, Elegant Inox</td> <td>Rs.13,600</td> <td> <img src="fridge1.jpg" alt="tv3" height="300px" width="300px">
-	<tr> <td align="center">3</td> <td align="center">Double Oakwood Chairs</td> <td>Rs.10,000</td> <td> <img src="chair3.jpg" alt="chair3">
+	<tr> <td class="mid cent">1</td> <td class="mid cent"> <a href="furniture.html #pic1"> King Size Bed </a> </td> <td class="mid">Rs.20,000</td> <td class="mid"> <img src="bed2.jpg" alt="bed2"> </td>
+	<tr> <td class="mid cent">2</td> <td class="mid cent"> <a href="furniture.html #pic2"> Samsung 192 litres 3 Star Single Door Refrigerator, Elegant Inox </a> </td> <td class="mid">Rs.13,600</td> <td class="mid"> <img src="fridge1.jpg" alt="tv3" height="300px" width="300px"> </td>
+	<tr> <td class="mid cent">3</td> <td class="mid cent"> <a href="furniture.html #pic3"> Double Oakwood Chairs </a> </td> <td class="mid">Rs.10,000</td> <td class="mid"> <img src="chair3.jpg" alt="chair3"> </td>
 
 
 </table>
-<div align="center"><a href="index.html"> <img src="back.png" height="2%" width="2%"/> Back to Home</a> </div>s
 
-<footer align="right"> Copyrights &copy; 2020, All Rights Reserved.
+</div>
+
+<div class="cent"><a href="index.html"> <img src="back.png" height="2%" width="2%"/> Back to Home</a> </div>
+
+<footer> Copyrights &copy; 2020, All Rights Reserved.
 </footer >
 
 
