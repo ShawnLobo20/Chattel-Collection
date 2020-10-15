@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.example.org/libr1"
+ xmlns:tns="http://www.example.org/libr1" 
+ elementFormDefault="qualified">
+ 
+ <complexType name="rootType">
+<sequence>
+<element name="Library" type="tns:LibraryType" maxOccurs="3" minOccurs="1">
+</element>
+</sequence>
+</complexType>
+<complexType name="LibraryType">
+<sequence>
+<element name="bookName" type="string"></element>
+<element name="author" type="string"></element>
+<element name="price" type="integer"></element>
+<element name="dateOfBorrow" type="date"></element>
+<element name="dateOfReturn" type="date"></element>
+</sequence>
+<attribute name="fid" type="ID" use="required"> </attribute>
+</complexType>
+<element name="globalLibrary" type="tns:rootType"></element> 
+ 
+ 
+</schema>

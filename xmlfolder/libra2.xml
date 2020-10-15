@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="details.xsl"?>
+<tns:globalLibrary xmlns:tns="http://www.example.org/libr1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/libr1 libr1.xsd ">
+  <tns:Library fid="F001">
+    <tns:bookName>Trial One</tns:bookName>
+    <tns:author>Sir Sheeps-alot</tns:author>
+    <tns:price>500</tns:price>
+    <tns:dateOfBorrow>2020-08-01</tns:dateOfBorrow>
+    <tns:dateOfReturn>2020-08-20</tns:dateOfReturn>
+  </tns:Library>
+  <tns:Library fid="F002">
+    <tns:bookName>Trial two</tns:bookName>
+    <tns:author>Sir Goats-alot</tns:author>
+    <tns:price>800</tns:price>
+    <tns:dateOfBorrow>2020-08-02</tns:dateOfBorrow>
+    <tns:dateOfReturn>2020-08-19</tns:dateOfReturn>
+  </tns:Library>
+  <tns:Library fid="F003">
+    <tns:bookName>Trial three</tns:bookName>
+    <tns:author>Sir Rams-alot</tns:author>
+    <tns:price>900</tns:price>
+    <tns:dateOfBorrow>2020-08-03</tns:dateOfBorrow>
+    <tns:dateOfReturn>2020-08-18</tns:dateOfReturn>
+  </tns:Library>
+  
+</tns:globalLibrary>

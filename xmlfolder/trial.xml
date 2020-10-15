@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="details.xsl"?>
+<globalLibrary>
+  <Library>
+    <bookName>Trial One</bookName>
+    <author>Sir Sheeps-alot</author>
+    <price>500</price>
+    <dateOfBorrow>2020-08-01</dateOfBorrow>
+    <dateOfReturn>2020-08-20</dateOfReturn>
+  </Library>
+  <Library>
+    <bookName>Trial two</bookName>
+    <author>Sir Goats-alot</author>
+    <price>800</price>
+    <dateOfBorrow>2020-08-02</dateOfBorrow>
+    <dateOfReturn>2020-08-19</dateOfReturn>
+  </Library>
+  <Library>
+    <bookName>Trial three</bookName>
+    <author>Sir Rams-alot</author>
+    <price>900</price>
+    <dateOfBorrow>2020-08-03</dateOfBorrow>
+    <dateOfReturn>2020-08-18</dateOfReturn>
+  </Library>
+  
+</globalLibrary>
