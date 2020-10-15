@@ -6,21 +6,21 @@
  
  <complexType name="rootType">
 <sequence>
-<element name="Library" type="tns:LibraryType" maxOccurs="3" minOccurs="1">
+<element name="Managers" type="tns:ManagersType" maxOccurs="3" minOccurs="1">
 </element>
 </sequence>
 </complexType>
-<complexType name="LibraryType">
+<complexType name="ManagersType">
 <sequence>
-<element name="bookName" type="string"></element>
-<element name="author" type="string"></element>
-<element name="price" type="integer"></element>
-<element name="dateOfBorrow" type="date"></element>
-<element name="dateOfReturn" type="date"></element>
+<element name="srno" type="integer"></element>
+<element name="managerName" type="string"></element>
+<element name="age" type="integer"></element>
+<element name="phone" type="integer"></element>
+<element name="dateOfBirth" type="date"></element>
 </sequence>
 <attribute name="fid" type="ID" use="required"> </attribute>
 </complexType>
-<element name="globalLibrary" type="tns:rootType"></element> 
+<element name="globalManagers" type="tns:rootType"></element> 
  
  
 </schema>

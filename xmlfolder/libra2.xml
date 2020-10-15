@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="details.xsl"?>
-<tns:globalLibrary xmlns:tns="http://www.example.org/libr1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/libr1 libr1.xsd ">
-  <tns:Library fid="F001">
-    <tns:bookName>Trial One</tns:bookName>
-    <tns:author>Sir Sheeps-alot</tns:author>
-    <tns:price>500</tns:price>
-    <tns:dateOfBorrow>2020-08-01</tns:dateOfBorrow>
-    <tns:dateOfReturn>2020-08-20</tns:dateOfReturn>
-  </tns:Library>
-  <tns:Library fid="F002">
-    <tns:bookName>Trial two</tns:bookName>
-    <tns:author>Sir Goats-alot</tns:author>
-    <tns:price>800</tns:price>
-    <tns:dateOfBorrow>2020-08-02</tns:dateOfBorrow>
-    <tns:dateOfReturn>2020-08-19</tns:dateOfReturn>
-  </tns:Library>
-  <tns:Library fid="F003">
-    <tns:bookName>Trial three</tns:bookName>
-    <tns:author>Sir Rams-alot</tns:author>
-    <tns:price>900</tns:price>
-    <tns:dateOfBorrow>2020-08-03</tns:dateOfBorrow>
-    <tns:dateOfReturn>2020-08-18</tns:dateOfReturn>
-  </tns:Library>
+<globalManagers xmlns:tns="http://www.example.org/libr1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.example.org/libr1 libr1.xsd ">
+  <Managers fid="F001">
+    <srno>1</srno>
+    <managerName>James</managerName>
+    <age>29</age>
+    <phone>123456789</phone>
+    <dateOfBirth>1992-08-20</dateOfBirth>
+  </Managers>
   
-</tns:globalLibrary>
+  <Managers fid="F002">
+    <srno>2</srno>
+    <managerName>Nigel</managerName>
+    <age>24</age>
+    <phone>456789123</phone>
+    <dateOfBirth>1995-12-21</dateOfBirth>
+  </Managers>
+  
+  <Managers fid="F003">
+    <srno>3</srno>
+    <managerName>Ron</managerName>
+    <age>27</age>
+    <phone>789456123</phone>
+    <dateOfBirth>1990-05-30</dateOfBirth>
+  </Managers>
+  
+</globalManagers>
