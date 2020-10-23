@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="displayy.xsl"?>
+
+<globalEmployee xmlns:tns="http://www.example.org/emply" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.example.org/emply emply.xsd ">
+  <Employee emid="em1">
+    <Emp-id>1</Emp-id>
+    <Emp-name>John</Emp-name>
+    <Emp-age>48</Emp-age>
+    <Emp-salary>200000</Emp-salary>
+    <Emp-emailid>john@gmail.com</Emp-emailid>
+    <Emp-Phonenum>1234567897</Emp-Phonenum>
+    <Emp-designation>HOD</Emp-designation>
+    <Emp-promotion>Associate Project Manager</Emp-promotion>
+  </Employee>
+  
+  <Employee emid="em2">
+  	<Emp-id>2</Emp-id>
+    <Emp-name>Ron</Emp-name>
+    <Emp-age>45</Emp-age>
+    <Emp-salary>56000</Emp-salary>
+    <Emp-emailid>ron@gmail.com</Emp-emailid>
+    <Emp-Phonenum>789456123</Emp-Phonenum>
+    <Emp-designation>Manager</Emp-designation>
+    <Emp-promotion>Team Leader</Emp-promotion>
+  </Employee>
+</globalEmployee>

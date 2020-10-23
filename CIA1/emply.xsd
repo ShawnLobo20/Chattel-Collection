@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/emply" 
+xmlns:tns="http://www.example.org/emply" 
+elementFormDefault="qualified">
+
+<complexType name="Company">
+<sequence>
+<element name="Employee" type="tns:EmployeeType" minOccurs="1" maxOccurs="2">
+</element>
+</sequence>
+</complexType>
+
+<complexType name="EmployeeType">
+<sequence>
+<element name="Emp-name" type="string"></element>
+<element name="Emp-age" type="integer"></element>
+<element name="Emp-salary" type="tns:MyEmployee"></element>
+<element name="Emp-emailid" type="string"></element>
+<element name="Emp-Phonenum" type="integer"></element>
+<element name="Emp-designation" type="string"></element>
+</sequence>
+<attribute name="emid" type="ID" use="required"></attribute>
+</complexType>
+
+<element name="globalEmployee" type="tns:Company"></element>
+
+<simpleType name="MyEmployee">
+<restriction base="integer">
+<minExclusive value="49000"></minExclusive>
+<maxExclusive value="200001"></maxExclusive>
+</restriction>
+</simpleType>
+
+
+</schema>
