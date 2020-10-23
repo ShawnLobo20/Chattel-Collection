@@ -11,10 +11,19 @@
   
   <tns:Employee emid="em2">
     <tns:Emp-name>Ron</tns:Emp-name>
-    <tns:Emp-age>22</tns:Emp-age>
-    <tns:Emp-salary>56000</tns:Emp-salary>
+    <tns:Emp-age>45</tns:Emp-age>
+    <tns:Emp-salary>75000</tns:Emp-salary>
     <tns:Emp-emailid>ron@gmail.com</tns:Emp-emailid>
     <tns:Emp-Phonenum>789456123</tns:Emp-Phonenum>
     <tns:Emp-designation>Manager</tns:Emp-designation>
+  </tns:Employee>
+  
+  <tns:Employee emid="em3">
+    <tns:Emp-name>Tom</tns:Emp-name>
+    <tns:Emp-age>22</tns:Emp-age>
+    <tns:Emp-salary>56000</tns:Emp-salary>
+    <tns:Emp-emailid>tom@gmail.com</tns:Emp-emailid>
+    <tns:Emp-Phonenum>456781239</tns:Emp-Phonenum>
+    <tns:Emp-designation>Guide</tns:Emp-designation>
   </tns:Employee>
 </tns:globalEmployee>

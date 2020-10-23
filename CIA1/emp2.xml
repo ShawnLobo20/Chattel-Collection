@@ -5,7 +5,7 @@
   <Employee emid="em1">
     <Emp-id>1</Emp-id>
     <Emp-name>John</Emp-name>
-    <Emp-age>48</Emp-age>
+    <Emp-age>52</Emp-age>
     <Emp-salary>200000</Emp-salary>
     <Emp-emailid>john@gmail.com</Emp-emailid>
     <Emp-Phonenum>1234567897</Emp-Phonenum>
@@ -17,10 +17,21 @@
   	<Emp-id>2</Emp-id>
     <Emp-name>Ron</Emp-name>
     <Emp-age>45</Emp-age>
-    <Emp-salary>56000</Emp-salary>
+    <Emp-salary>75000</Emp-salary>
     <Emp-emailid>ron@gmail.com</Emp-emailid>
     <Emp-Phonenum>789456123</Emp-Phonenum>
     <Emp-designation>Manager</Emp-designation>
     <Emp-promotion>Team Leader</Emp-promotion>
+  </Employee>
+  
+  <Employee emid="em3">
+  	<Emp-id>3</Emp-id>
+    <Emp-name>Tom</Emp-name>
+    <Emp-age>22</Emp-age>
+    <Emp-salary>56000</Emp-salary>
+    <Emp-emailid>tom@gmail.com</Emp-emailid>
+    <Emp-Phonenum>456781239</Emp-Phonenum>
+    <Emp-designation>Guide</Emp-designation>
+    <Emp-promotion>Developer</Emp-promotion>
   </Employee>
 </globalEmployee>

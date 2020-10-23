@@ -37,7 +37,7 @@
 	<h1>Employee Management System</h1>
 	
 	
-	<form action="emp2.xml">
+	<form action="emp2.xml" onsubmit="return check()">
 	
 	<table border="1">
 	
@@ -68,6 +68,9 @@
 	
 	
 	</table>
+	
+	<br></br>
+	<button type="submit"> Submit </button>
 	
 	</form>
 	
