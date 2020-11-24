@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<globalCompany>
+	<brand>
+		<bsr>1</bsr>
+		<bname>Godrej Interio</bname>
+		<bphone>1800-267-1122</bphone>
+		<btype>Furniture</btype>
+	</brand>
+	
+	<brand>
+		<bsr>2</bsr>
+		<bname>Usha Lexus</bname>
+		<bphone>1800-1033-111</bphone>
+		<btype>Furniture</btype>
+	</brand>
+	
+	<brand>
+		<bsr>3</bsr>
+		<bname>Samsung</bname>
+		<bphone>1800-4072-67864</bphone>
+		<btype>Appliance</btype>
+	</brand>
+	
+	<brand>
+		<bsr>4</bsr>
+		<bname>Whirlpool</bname>
+		<bphone>1800-208-1800</bphone>
+		<btype>Appliance</btype>
+	</brand>
+</globalCompany>
