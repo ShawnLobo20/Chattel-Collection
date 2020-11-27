@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CHRIST>
+	<CS>
+		<STU-NAME>Thomas</STU-NAME>
+		<STU-BRANCH>MCA</STU-BRANCH>
+		<STU-COLLEGE>St.Josephs College</STU-COLLEGE>
+		<STU-EMAIL>thom@stjosephs.in</STU-EMAIL>
+	</CS>
+	
+	<CS>
+		<STU-NAME>Jack</STU-NAME>
+		<STU-BRANCH>MSC</STU-BRANCH>
+		<STU-COLLEGE>Jain University</STU-COLLEGE>
+		<STU-EMAIL>jackkk@jainuniversity.in</STU-EMAIL>
+	</CS>
+	
+	<CS>
+		<STU-NAME>Shelly</STU-NAME>
+		<STU-BRANCH>MCA</STU-BRANCH>
+		<STU-COLLEGE>St. Aloysius College</STU-COLLEGE>
+		<STU-EMAIL>shell@staloysius.in</STU-EMAIL>
+	</CS>
+	
+</CHRIST>

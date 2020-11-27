@@ -1,0 +1,273 @@
+<!doctype html>
+
+<html style="overflow-x:hidden" lang="en">
+ <head>
+	<meta charset="utf-8">
+	
+	<title>Furnitures and Appliances  </title>
+ 
+ <style>
+		*{
+			box-sizing:border-box;
+		}
+		
+		.row{
+			width:100%;
+			height:500px;
+			border:1px solid black;
+			
+		}
+	
+		body
+        {
+            background-color: #FFF5DC;
+        }
+	
+	</style>
+ 
+ 
+ 
+ </head>
+
+
+<body>
+
+<h1><u><i> TECHNOVID - GATEWAYS 2020</i></u></h1>
+
+
+<div class="row">
+
+<script>
+		
+		
+		
+		
+		function validate()
+		{
+			
+			let username = document.getElementById("uname");
+			let passwd = document.getElementById("pass");
+			let addrs = document.getElementById("address");
+			let eml = document.getElementById("email");
+			let phone = document.getElementById("pnum");
+			let userna = document.getElementById("usernm");
+			let branc = document.getElementById("brnc");
+			let stte = document.getElementById("sta");
+			let agee = document.getElementById("ag");
+			let unicol = document.getElementById("couni");
+			
+			
+			if(username.value.trim()=="" || passwd.value.trim()=="" || addrs.value.trim()=="" || eml.value.trim()=="" || phone.value.trim()=="" || userna.value.trim()=="" || branc.value.trim()=="" || stte.value.trim()=="" || agee.value.trim()=="" || unicol.value.trim()=="")
+			{	
+				
+				alert("Please enter values");
+				return false;
+			}
+			
+			else 
+			{
+				true;
+			}
+			
+			
+			if(phone.value.trim().length==10)
+			
+			{
+				//document.getElementById("pnum").style.borderColor = "white";
+				 true;
+			}
+			
+			else 
+			{
+				//document.getElementById("pnum").style.borderColor = "red";
+				alert("enter phone number of 10 digits only.");
+				return false;
+			}
+			
+			
+			if(passwd.value.trim().length>8)
+			
+			{
+				 true;
+			}
+			
+			else 
+			{
+				alert("password should be more than 8 digits.");
+				return false;
+			}
+
+
+
+			if(agee.value.trim()> 0 )
+			{
+				true;
+			}
+
+			else
+			{
+				alert("Please enter an age above 1 ");
+				return false;
+			}
+
+
+
+
+			
+			
+			
+			return true;
+			
+		}
+		
+		
+		
+		
+		
+		function test(event)
+		{
+			
+			let code= event.which;
+			
+			if((code>96 && code<123) || (code>64 && code<91) || code==32)
+			{
+				return true;
+				
+			}
+				
+			else
+			{
+				return false;
+			}
+			
+		}
+		
+		
+		function test2(event)
+		{
+			
+			let code= event.which;
+			
+			if(code>47 && code<58)
+			{
+				return true;
+			}
+			
+			else
+			{
+				return false;
+				
+			}
+			
+		}
+		
+		
+		
+
+		
+
+		function setCookie()
+		{
+
+			if(document.getElementById("rememberme").checked==true)
+			{
+				document.cookie = "usernm=" + document.getElementById("usernm").value;
+				document.cookie = "pnum=" + document.getElementById("pnum").value;
+
+				return true;
+			}
+
+			//return true;
+		}
+
+		window.onload = function()
+		{
+
+			if(document.cookie.length!=0)
+			{
+
+				var cook, temp;
+				
+				cook = document.cookie.split(";");
+				
+
+				for(var i=0; i< cook.length; i++)
+				{
+					
+					temp=cook[i].split("=");
+					
+                    if(temp[0]=="usernm")
+                    {
+                        document.getElementById("usernm").value=temp[1];
+                    }
+                
+					if(temp[0]==" pnum")
+                    {
+                        document.getElementById("pnum").value=temp[1];
+                    }
+
+				}
+
+			}
+
+
+		
+		}
+
+
+
+		
+	</script>
+	
+	
+	<h1> Login Page</h1>
+	
+	
+
+	<form action="index.html" onsubmit="return !!(setCookie() & validate());">
+	
+		
+		Name:<input type="text" id="uname" onkeypress="return test(event)"/> <br> <br>
+
+		Username:<input type="text" id="usernm"/> <br> <br>
+		
+		Password:<input type="password" id="pass"/> <br> <br>
+
+		State:<input type="text" id="sta" onkeypress="return test(event)"/> <br> <br>
+		
+		Address:<input type="text" id="address"/> <br> <br>
+		
+		Email:<input type="email" id="email"/> <br> <br>
+		
+		Phone Number:<input type="text" id="pnum" onkeypress="return test2(event)" /> <br> <br>
+
+		Age:<input type="text" id="ag" onkeypress="return test2(event)"/> <br> <br>
+		
+		College/ University Name:<input type="text" id="couni" onkeypress="return test(event)"/> <br> <br>
+		
+		Branch:<input type="text" id="brnc" onkeypress="return test(event)"/> <br> <br>
+
+		<input type="checkbox" id="rememberme" checked="checked" name="rem"/> Remember me
+	
+		<button type="submit"> Submit </button>
+	
+	</form>
+	
+
+	
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
