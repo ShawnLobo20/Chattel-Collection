@@ -1,12 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="filter_app.js"></script>
+    <link href="filter.css" rel="stylesheet">
 
-<html style="overflow-x:hidden" lang="en">
- <head>
-	<meta charset="utf-8">
-	
-	<title>Furnitures and Appliances  </title>
- 
- <style>
+    <style>
 		*{
 			box-sizing:border-box;
 		}
@@ -123,7 +125,7 @@
 		
 		
 		
-		body { background-color:#FFF5DC; background-image: linear-gradient(to right, #FFFFFF , #F6F6F6);}
+		body { background-color:#dfcd9f; }
 		
 		
 		
@@ -160,60 +162,57 @@
 		
 	
 	</style>
- 
- 
- 
- </head>
 
 
-<body>
+</head>
+<body ng-app="MyApp">
 
-<div id="t">
- <header id="he"> Chattel Collection </header> 
-</div>
+    <div id="t">
+        <header id="he"> Chattel Collection </header> 
+    </div>
+    <center> 
+    <h1> <i>Item Cart</i> </h1>
 
-<ul class="oo">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="sale.html">Furnitures and Appliances on Sale</a></li>
-  <li><a href ="furniture.html"> Furnitures and Appliances</a></li> 
-  <li><a class="active" href="contact.html">Contact</a></li>
-  <li><a href="xmlfolder/libra2.xml"> Managers </a></li>
-  <li><a href="company1.html">Brand Ties</a></li>
-  <li><a href="filter2.html">Item Cart</a></li>
-  <li><a href="index.html#bo">About</a></li>
-</ul>
+    
+    <div ng-controller="MyCtrl">
+        Rows to Display:<input type="number" step="1" min="0" max="5" ng-model="rowlimit" />
+        <br \>
+        <br \>
 
+        Search:<input type="text" placeholder="Seach Items" ng-model="Search" />
+        <br \>
+        <br \>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Cart Addition Date</th>
+                <th>Type</th>
+                <!-- <th>Price</th> -->
+                <th>Price</th>
+            </tr>
+            <tbody>
+                <tr ng-repeat="employee in employees | limitTo:rowlimit |filter:Search | orderBy:'price' ">
+                    <td>{{employee.name | uppercase}}</td>
+                    <td>{{employee.brand | lowercase}}</td>
+                    <td>{{employee.dob | date:"dd/MM/yyyy"}}</td>
+                    <td>{{employee.type | lowercase}}</td>
+                    <!-- <td>{{employee.price | number:0}}</td> -->
+                    <td> {{employee.price | currency:"&#8377;":0 }}</td>
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+</center>
 
-
-
-<h1> <i>Contact</i> </h1>
-
-<div class="row">
-
-<ul>
-<li> Name: Shawn Lobo</li><br>
-<li> Phone Number: 7894561589</li><br>
-<li> Email: shawnlobo2000@gmail.com</li><br>
-
-</ul>
-
-	<div class="mul">
+	<div class="cent" style="margin-left:45%"><a href="index.html"> <img src="back.png" height="5%" width="5%"/> Back to Home</a>
+		 <br><br><a style="margin-left:10%" href="filter3.html">Next</a> 
 	</div>
 
-
-</div>
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
-
-<div class="cent" style="margin-left:45%"><a href="index.html"> <img src="back.png" height="5%" width="5%"/> Back to Home</a> </div>
-
-
-<footer> Copyrights &copy; 2020, All Rights Reserved.
-</footer >
-<hr style=" margin-left:-10%; margin-top:50px; width:200%; height:50px; background-color:#950909; color:#950909">
-
-
+    <footer> Copyrights &copy; 2020, All Rights Reserved.
+    </footer >
+    <hr style=" margin-left:-10%; margin-top:50px; width:200%; height:50px; background-color:#950909; color:#950909">
 
 
 
