@@ -26,7 +26,7 @@
 			
 			.row{
 				width:100%;
-				height:350px;
+				height:300px;
 				border:1px solid black;
 				background:url(page1.jpg);
 				background-repeat: repeat;
@@ -115,7 +115,7 @@
 			footer{
 				text-align:right;
 				color:white;
-				margin-top:11%;
+					
 				
 			}
 			
@@ -135,10 +135,7 @@
 			}
 		
 		
-		body
-        {
-            background-color: #FFF5DC;
-        }
+		
 		
 			
 		
@@ -190,14 +187,17 @@
 
 		<center><h1><i> Brand Ties and their Details</i></h1>
 
-			Date:<span id="date"></span><br>
-			Time:<span id="time"></span><br>
-		<button type="button" onclick="dome(); datetimeload()"> Display Brand Details </button>
-
-		<!-- <p id="showData"></p>
-		<p id = "msg"></p> -->
+		<button type="button" onclick="dome()"> Display Brand Details </button>
 
 				
+
+		<select id="bacg" onchange="show()">
+			<option value="select color"> Select Colour</option>
+			<option value="#22271a"> Dark gray Background</option> 
+			<option value="#3995a6"> Blue Background</option>
+			<option value="#6a2715"> Brown Background</option>
+		</select>
+
 		<br><br>
 		
 		<table id="det"> </table>
@@ -255,98 +255,36 @@
 				document.getElementById("det").innerHTML = t; 
 						
 			}
-
-		
-			function datetimeload()
+			
+			
+			function show()
 			{
-				let url=" http://time.jsontest.com ";
-				var request;
-				request=new XMLHttpRequest();
-				request.onreadystatechange=function()
+				var value=document.getElementById("bacg").value;
+
+				if(value != "select color")
 				{
-					if(request.readyState==4)
-					{
-						var obj=JSON.parse(request.responseText);
-						document.getElementById("date").innerHTML=obj.date;
-						document.getElementById("time").innerHTML=obj.time;
-					}
-				};
-				request.open("GET",url,true);
-				request.send();
+					document.bgColor = value;
+					document.cookie = "color=" +value+";expires=Fri,1 Aug 2021 01:01:01 UTC;";
+					
+
+				}
+
 			}
 
+			window.onload = function()
+			{
+				if(document.cookie.length!=0)
+				{
+					var a = document.cookie.split("=");
+					document.getElementById("bacg").value = a[1];
+					document.bgColor = a[1];
 
-			// function jtable()
-			// {
-				
-			// 	var myBooks = [
+				}
 
-			// 		{
-			// 			"Furniture ID": "1",
-			// 			"Book Name": "Computer Architecture", 
-			// 			"Category": "Computers",
-			// 			"Price": "125.60"
-			// 		},
-			// 		{
-			// 			"Furniture ID": "2",
-			// 			"Book Name": "ASpp", 
-			// 			"Category": "Programming",
-			// 			"Price": "56.00"
-			// 		},
-			// 		{
-			// 			"Furniture ID": "3",
-			// 			"Book Name": "Popular Science", 
-			// 			"Category": "Science",
-			// 			"Price": "210.40"
-			// 		}
-			// 	]
+			}
 
-				
-			// 	var col = [];
-			// 	for(var i = 0; i < myBooks.length; i++)
-			// 	{
-			// 		for(var key in myBooks[i])
-			// 		{
-			// 			if(col.indexOf(key) === -1)
-			// 			{
-			// 				col.push(key);
-			// 			}
-			// 		}
-					
-			// 	}
-
-
-			// 	var table = document.createElement("table");
-				
-			// 	var tr = table.insertRow(-1);
-
-			// 	for(var i = 0; i < col.length; i++)
-			// 	{
-			// 		var th = document.createElement("th");
-			// 		th.innerHTML = co[i];
-			// 		tr.appendChild(th);
-			// 	}
-
-			// 	for(var i = 0; i < myBooks.length; i++)
-			// 	{
-			// 		tr = table.insertRow(-1);
-
-			// 		for(var j = 0; j < col.length; j++)
-			// 		{
-			// 			var tabCell = tr.insertCell(-1);
-			// 			tabCell.innerHTML = myBooks[i][col[j]];
-			// 		}
-			// 	}
-
-
-			// 	var divContainer = document.getElementById("showData");
-			// 	divContainer.innerHTML = "";
-			// 	divContainer.appendChild(table);
-
-			// }
-
-
-
+		
+		
 		</script>
 		
 
@@ -354,7 +292,7 @@
 	
 		<footer> Copyrights &copy; 2020, All Rights Reserved.
 		</footer >
-		<hr style=" margin-left:-2%; margin-top:-3%; width:105%; height:50px; background-color:#950909; color:#950909">
+		<hr style=" margin-left:-2%; margin-top:10%; width:105%; height:50px; background-color:#950909; color:#950909">
 
 
 	</body>

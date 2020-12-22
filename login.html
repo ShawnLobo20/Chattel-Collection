@@ -289,14 +289,13 @@
 
 			if(document.getElementById("rememberme").checked==true)
 			{
-				document.cookie = "uname=" + document.getElementById("uname").value;
-				document.cookie = "pass=" + document.getElementById("pass").value;
-				document.cookie = "address=" + document.getElementById("address").value;
-				document.cookie = "email=" + document.getElementById("email").value;
-				document.cookie = "pnum=" + document.getElementById("pnum").value;
+				document.cookie = "uname=" + document.getElementById("uname").value+"; expires=Sat,1 Aug 2022 01:01:01 UTC;";
+				document.cookie = "pass=" + document.getElementById("pass").value+"; expires=Fri,1 Aug 2021 01:01:01 UTC;";
+				document.cookie = "address=" + document.getElementById("address").value+"; expires=Fri,1 Aug 2021 01:01:01 UTC;";
+				document.cookie = "email=" + document.getElementById("email").value+"; expires=Fri,1 Aug 2021 01:01:01 UTC;";
+				document.cookie = "pnum=" + document.getElementById("pnum").value+"; expires=Fri,1 Aug 2021 01:01:01 UTC;";
 
-				
-				// location.replace(index.html);
+				return true;
 			}
 
 			return true;
@@ -344,7 +343,7 @@
 			}
 
 
-
+			//return true;
 		}
 
 
